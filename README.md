@@ -16,3 +16,13 @@ The linear model does effectively predict miles per gallon; our r squared value 
 
 <img width="632" alt="deliverable_1_lm_summary" src="https://user-images.githubusercontent.com/106359572/193420504-678b5e48-91dc-4f20-a437-cdb029f2ea5d.PNG">
 <img width="543" alt="deliverable_1_lm_summary2" src="https://user-images.githubusercontent.com/106359572/193420512-b6fff082-23e5-44b8-9a1c-105ee7792e10.PNG">
+
+## Summary Statistics on Suspension Coils
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+![image](https://user-images.githubusercontent.com/106359572/193423299-bbf7ec7f-7593-4a78-b4e6-85bda8e1172b.png)
+
+![image](https://user-images.githubusercontent.com/106359572/193423550-2f4d5df2-ff5b-4726-9aad-f008ac090939.png)
+
+
