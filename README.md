@@ -26,3 +26,18 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ![image](https://user-images.githubusercontent.com/106359572/193423550-2f4d5df2-ff5b-4726-9aad-f008ac090939.png)
 
 
+## T-Tests on Suspension Coils
+Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.  summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+![image](https://user-images.githubusercontent.com/106359572/193423801-9bdf9e8d-a252-4401-82de-a6bfeb2b41d3.png)
+![image](https://user-images.githubusercontent.com/106359572/193423903-1b155b1d-b5d6-4260-b76f-c3f80bba6632.png)
+
+
+## Study Design: MechaCar vs Competition
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+In your description, address the following questions:
+What metric or metrics are you going to test?
+What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why?
+What data is needed to run the statistical test?
+
+https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_15/Stats_Cheat_Sheet.pdf
