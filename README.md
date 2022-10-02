@@ -19,7 +19,8 @@ The linear model does effectively predict miles per gallon; our r squared value 
 
 ## Summary Statistics on Suspension Coils
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+For this deliverable, we've created a dataframe ("total_summary") using the summarize() function to find the mean, median, variance and standard deviation for all suspension coils' PSI column (1st image below).  
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.  However, as shown in image #2 below, the variance for Lot 3 vehicles far exceeds this limit with a variance of over 170.
 
 ![image](https://user-images.githubusercontent.com/106359572/193423299-bbf7ec7f-7593-4a78-b4e6-85bda8e1172b.png)
 
@@ -27,17 +28,15 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 
 ## T-Tests on Suspension Coils
-Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.  summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+In Deliverable 3, we've created three additional RScripts using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch. 
+As shown in the below images, Lot 3 is once again the outlier, with a p-value less than the assumed 0.05%, and a mean of 1496.4.
 ![image](https://user-images.githubusercontent.com/106359572/193423801-9bdf9e8d-a252-4401-82de-a6bfeb2b41d3.png)
 ![image](https://user-images.githubusercontent.com/106359572/193423903-1b155b1d-b5d6-4260-b76f-c3f80bba6632.png)
 
 
 ## Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+Future maintenance cost often weighs in heavily in consumers' decision making factors when choosing a vehicle.
+An additional metric to analyze should be <b>average repair cost per mile driven</>.  An ANOVA test would best suit this, since the data would come from multiple samples (i.e., vehicle manufacturers).
 
-https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_15/Stats_Cheat_Sheet.pdf
+Our null hypothesis in this case would be that there is no significant difference between the means of cost per mile between the various vehicle makes.  Our alternative hpyothesis would be that that is a significant difference.  The data we'd need to collect would be, at a minimum, vehicle make and model (categorical), along with number of miles driven and number of dollars spent on maintenance/repairs to date (quantitative).  
+Other independent variables to consider would be vehicle length, weight, number of cylinders and horsepower, to see whether there's a strong correlation between any of the above variables and the cost of maintenance.  We could look at the p-value for all analyses to see whether there's justification in rejecting or failing to reject our null hypothesis.
